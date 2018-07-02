@@ -15,6 +15,17 @@
 		<link rel="stylesheet" href="static/css/screen.min.css">
 		<link rel="stylesheet" href="static/css/custom.min.css">
 		<script src="static/js/head.min.js"></script>
+		<script>
+			var map;
+			function initMap() {
+				map = new google.maps.Map(document.getElementById('gmap'), {
+					center: {lat: -34.397, lng: 150.644},
+					zoom: 8
+				});
+			}
+		</script>
+		<script src=https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+    async defer></script>
 	</head>
 	<body>
 		<!--<script>
@@ -47,13 +58,13 @@
 		<header class="main-header">
 			<div class="first-nav">
 				<div class="container">
-					<!--<nav class="first-nav__links">
-						<ul>
+					<nav class="first-nav__links">
+						<!--<ul>
 							<li><a class="is-selected">english</a></li>
 							<li><a href="#">français</a></li>
 							<li><a href="#">deutsch</a></li>
-						</ul>
-					</nav>-->
+						</ul>-->
+					</nav>
 					<a class="first-nav__navcontrol icon icon_menu js-navcontrol" href="#">Menu</a>
 				</div>
 			</div>
@@ -68,7 +79,7 @@
 							<li><a class="js-link js-anchor" href="#process">Process</a></li>
 							<li><a class="js-link js-anchor" href="#projects">Projects</a></li>
 							<li><a class="js-link js-anchor" href="#testimonials">Testimonials</a></li>
-							<li><a class="js-link js-anchor" href="#contacts">Contacts</a></li>
+							<li><a class="js-link js-anchor" href="#contacts">Contact</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -81,8 +92,8 @@
 			<div class="home-section__overlay">
 				<div class="container">
 					<header class="home-section__header">
-						<h1>John Doe</h1>
-						<h2>Project management consultant.</h2>
+						<h1 style="font-family:'agency';">Seth Boyce</h1>
+						<h2>Freelance coder (Beginner)</h2>
 					</header>
 				</div>
 			</div>
@@ -93,8 +104,7 @@
 			<div class="container">
 				<div class="about-card">
 					<header class="about-card__header">
-						<h2>About me</h2>
-						<h4>Curabitur accumsan nulla ut velit facilisis</h4>
+						<h2 style="font-family:agency;">About me</h2>
 					</header>
 					<div class="about-card__info">
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lacinia nulla vel ornare interdum. Donec posuere leo ut justo imperdiet, ut congue lorem faucibus. Aliquam fringilla felis at est tincidunt efficitur. Phasellus enim ipsum, porttitor et urna ac, finibus finibus eros.</p>
@@ -102,7 +112,7 @@
 							<p>Donec non tincidunt massa. Vestibulum vel ultrices velit. Integer eget nibh vitae velit condimentum viverra vel eget diam. Ut facilisis finibus nisi ac feugiat. Nullam consectetur neque in est posuere feugiat et nec arcu. Pellentesque sit amet sapien lorem.</p>
 						</blockquote>
 						<p>Nunc non venenatis odio. Nullam id neque et lectus suscipit mattis ac a ante. Suspendisse potenti. Aliquam in nulla sem. Vivamus sodales malesuada leo, sit amet cursus nunc vulputate aliquet. Proin porttitor ex facilisis aliquam efficitur. Vestibulum scelerisque nisl ac ex rutrum, quis aliquet nibh ultrices.</p>
-						<p class="about-card__info-status"><span>Current status:</span> Available for hire</p>
+						<p class="about-card__info-status"><span>Current status:</span> <span style="color:#02d854; font-weight:normal;">Available!</span></p>
 					</div>
 				</div>
 			</div>
@@ -111,11 +121,10 @@
 		<!-- Services section-->
 		<section class="common-section" id="services">
 			<div class="container">
-				<header class="common-section__header">
-					<h2>Services</h2>
-					<h4>Quisque sollicitudin at lorem vitae gravida</h4>
+				<header class="about-card__header">
+					<h2 style="text-align:center; font-family:agency;">Services</h2>
 				</header>
-				<div class="grid-container">
+				<div class="grid-container about-card__info">
 					<ul class="services services_advisory">
 						<li class="services__item icon icon_research">
 							<h4>Fusce aliquam lorem</h4>
@@ -158,11 +167,10 @@
 			<!-- Process section-->
 			<section class="common-section" id="process">
 				<div class="container">
-					<header class="common-section__header">
-						<h2>How it works</h2>
-						<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam interdum tortor</h4>
+					<header class="about-card__header">
+						<h2 style="text-align:center; font-family:agency;">How it works</h2>
 					</header>
-					<div class="grid-container">
+					<div class="grid-container about-card__info">
 						<ul class="process">
 							<li class="process__step process__step_research"><div class="process__step-icon icon icon_research is-active"></div></li>
 							<li class="process__step-info process__step-info_research is-active">
@@ -191,12 +199,12 @@
 			
 			<!-- Projects section-->
 			<section class="common-section" id="projects">
-				<header class="common-section__header">
-					<h2>Projects</h2>
-					<p>Donec lorem ante, efficitur ut blandit eu, sollicitudin sed mi</p>
+				<header class="about-card__header">
+					<h2 style="text-align:center; font-family:agency;">Projects</h2>
+					<h4 style="text-align:center;">Below are some of my ongoing projects that I maintain in my free time.</h4>
 				</header>
 				<div class="projects-wrap">
-					<div class="grid-container">
+					<div class="grid-container about-card__info">
 						<div class="projects">
 							<figure class="projects__item"><img src="static/images/projects/1.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
 								<figcaption><a class="icon icon_link" href="#" rel="nofollow">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></figcaption>
@@ -318,7 +326,7 @@
 									<p class="icon icon_phone"><a class="email" href="tel:1111111111">111-111-11-11</a></p>
 								</div>
 								<ul class="contact-info__social">
-									<li><a class="icon icon_fb" rel="nofollow">I'm on Facebook</a></li>
+									<li><a class="icon icon_fb">I'm on Facebook</a></li>
 									<li><a class="icon icon_twi" rel="nofollow">My Twitter</a></li>
 									<li><a class="icon icon_gplus" rel="nofollow">I'm on Google+</a></li>
 									<li><a class="icon icon_vk" rel="nofollow">I'm in Vk</a></li>
@@ -337,7 +345,7 @@
 				<div class="container">
 					<p class="main-footer__copyright">&copy;&nbsp;<span>John Doe</span></p>
 					<a class="main-footer__gotop icon icon_gotop js-anchor" href="#home">To top!</a>
-					<!-- Designed by Maxim Orlov - http://orlovmax.com -->
+					<p class="main-footer__links">Designed by&nbsp;<a href="http://orlovmax.com">Maxim Orlov</a></p>
 				</div>
 			</footer>
 		<script src="static/js/body.min.js"></script>
