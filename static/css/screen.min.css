@@ -511,9 +511,7 @@ a:hover{
 	display:block;
 	width:100%;
 	height:0;
-	clear:both;
-	-webkit-box-shadow:0 0 2px 1px #2c3e50;
-	box-shadow:0 0 2px 1px #2c3e50
+	clear:both
 }
 
 .home-section__bg{
@@ -540,7 +538,7 @@ a:hover{
 }
 
 .home-section__header{
-	padding:200px 10px 400px;
+	padding:100px 10px 200px;
 	text-align:left
 }
 
@@ -614,9 +612,9 @@ a:hover{
 .services{
 	list-style-type:none;
 	float:left;
-	width:48%;
-	width:-webkit-calc(50% - 40px);
-	width:calc(50% - 40px);
+	width:30%;
+	width:-webkit-calc(31% - 40px);
+	width:calc(31% - 40px);
 	margin-left:1%;
 	margin-right:1%;
 	margin-left:-webkit-calc(20px);
@@ -896,25 +894,19 @@ a:hover{
 .projects{
 	float:left;
 	width:100%;
-	margin-left:0;
-	margin-right:0;
+	margin:0;
 	height:auto;
-	margin-top:0;
-	margin-bottom:0
 }
 
 .projects__item{
 	float:left;
 	width:25%;
-	margin-left:0;
-	margin-right:0;
 	height:auto;
-	margin-top:0;
-	margin-bottom:0;
+	margin:0;
 	position:relative;
 	height:0;
-	padding-bottom:18.75%;
-	overflow:hidden
+	padding-bottom:13%;
+	overflow:hidden;
 }
 
 .projects__item img{
@@ -931,7 +923,7 @@ a:hover{
 	position:absolute;
 	top:0;
 	left:0;
-	display:block;
+	display:inline-block;
 	width:100%;
 	height:100%;
 	text-align:center;
@@ -947,7 +939,8 @@ a:hover{
 .projects__item figcaption:after{
 	content:"";
 	display:inline-block;
-	width:0;height:100%;
+	width:0;
+	height:100%;
 	vertical-align:middle
 }
 
@@ -1042,7 +1035,8 @@ a:hover{
 
 .contacts-section{
 	position:relative;
-	padding-top:300px
+	padding-top:300px;
+	margin-bottom:400px;
 }
 
 .contact-card{
@@ -1180,6 +1174,8 @@ a:hover{
 	width:100%;
 	height:600px;
 	overflow:hidden;
+	background-position:top center;
+	background-size:cover;
 }
 
 #gmap:before{
@@ -1252,6 +1248,10 @@ a:hover{
 	padding-top:10px;
 	float:right;
 	line-height:40px
+}
+
+.main-footer__fill {
+	height: 50px;
 }
 
 .main-footer__author,.main-footer__designer,.main-footer__copyright,.main-footer__links{font-weight:lighter}
@@ -1362,10 +1362,10 @@ a:hover{
 		width:calc(100% - 40px);
 		margin-left:1%;
 		margin-right:1%;
-		margin-left:-webkit-calc(20px);
+		/*margin-left:-webkit-calc(20px);
 		margin-left:calc(20px);
 		margin-right:-webkit-calc(20px);
-		margin-right:calc(20px);
+		margin-right:calc(20px);*/
 		height:auto;
 		margin-top:0;
 		margin-bottom:0
