@@ -20,49 +20,18 @@
 		<script src="static/js/head.min.js"></script>
 	</head>
 	<body>
-		<!--<script>
-		progressJs().setOptions({overlayMode: true, theme: 'custom'}).start();
-		if(window.attachEvent)
-		{
-			window.attachEvent('onload', function(){ progressJs().end(); });
-		}
-		
-		else
-		{
-			if(window.onload)
-			{
-				var curronload = window.onload;
-				var newonload = function()
-				{
-					curronload();
-					progressJs().end();
-				};
-				window.onload = newonload;
-			}
-			else
-			{
-				window.onload = function(){ progressJs().end(); };
-			}
-		}
-		</script>-->
-	  
 		<!-- Header-->
 		<header class="main-header">
 			<div class="first-nav">
 				<div class="container">
 					<nav class="first-nav__links">
-						<!--<ul>
-							<li><a class="is-selected">english</a></li>
-							<li><a href="#">français</a></li>
-							<li><a href="#">deutsch</a></li>
-						</ul>-->
+						<!-- This space intentionally left blank -->
 					</nav>
 					<a class="first-nav__navcontrol icon icon_menu js-navcontrol" href="#">Menu</a>
 				</div>
 			</div>
 			<div class="second-nav js-nav">
 				<div class="container">
-					<!--<a class="second-nav__logo"><span>JD</span></a>-->
 					<nav class="menu">
 						<ul>
 							<li><a class="js-link js-anchor is-selected" href="#home">Home</a></li>
@@ -70,8 +39,6 @@
 							<li><a class="js-link js-anchor" href="#specialties">Specialties</a></li>
 							<li><a class="js-link js-anchor" href="#projects">Projects</a></li>
 							<li><a class="js-link js-anchor" href="#contacts">Contact</a></li>
-							<!--<li><a class="js-link js-anchor" href="#process">Process</a></li>-->
-							<!--<li><a class="js-link js-anchor" href="#testimonials">Testimonials</a></li>-->
 						</ul>
 					</nav>
 				</div>
@@ -80,15 +47,12 @@
 	
 		<!-- Home section-->
 		<section class="home-section" id="home">
-			<!-- <div class="home-section__bg"></div>
-			<div class="home-section__overlay">-->
-				<div class="container">
-					<header class="home-section__header">
-						<h1 style="font-family:'agency';">Seth Boyce</h1>
-						<h2>Freelancer</h2>
-					</header>
-				</div>
-			<!--</div>-->
+			<div class="container">
+				<header class="home-section__header">
+					<h1 style="font-family:'agency';">Seth Boyce</h1>
+					<h2>Freelancer</h2>
+				</header>
+			</div>
 		</section>
 		
 		<!-- About section-->
@@ -104,7 +68,6 @@
 							<p>Donec non tincidunt massa. Vestibulum vel ultrices velit. Integer eget nibh vitae velit condimentum viverra vel eget diam. Ut facilisis finibus nisi ac feugiat. Nullam consectetur neque in est posuere feugiat et nec arcu. Pellentesque sit amet sapien lorem.</p>
 						</blockquote>
 						<p>Nunc non venenatis odio. Nullam id neque et lectus suscipit mattis ac a ante. Suspendisse potenti. Aliquam in nulla sem. Vivamus sodales malesuada leo, sit amet cursus nunc vulputate aliquet. Proin porttitor ex facilisis aliquam efficitur. Vestibulum scelerisque nisl ac ex rutrum, quis aliquet nibh ultrices.</p>
-						<!--<p class="about-card__info-status"><span>Current status:</span> <span style="color:#02d854; font-weight:normal;">Available!</span></p>-->
 					</div>
 				</div>
 			</div>
@@ -135,7 +98,7 @@
 							<p>Coding is something of a hobby for me, though don't be dissuaded by my personal classification of this skill. Several of my hobby projects include working with JSON, Second Life's<sup>&trade;</sup> LSL, and of course HTML and CSS.</p>
 						</li>
 					</ul>
-					<!--<div class="advantages">
+					<!--<div class="advantages"> (intentionally left here for future reference) 
 						<h2>Why choose me?</h2>
 						<blockquote>
 							<p>Morbi vel orci at ante posuere consequat vel auctor dui. Quisque imperdiet elementum suscipit. Duis dapibus ante vel quam ullamcorper, a accumsan dui viverra. Donec accumsan magna metus, in interdum sem cursus in. Vestibulum sit amet lacus pretium, semper augue vitae, rutrum magna. Maecenas vitae iaculis neque. Aenean semper erat at augue cursus, ac imperdiet urna eleifend. Curabitur vehicula leo vitae orci eleifend lacinia.</p>
@@ -146,7 +109,7 @@
 			</div>
 		</section>
 			
-		<!-- Process section-->
+		<!-- Process section (intentionally left here for future reference) -->
 		<!--<section class="common-section" id="process">
 			<div class="container">
 				<header class="about-card__header">
@@ -224,15 +187,15 @@
 			<div class="container">
 				<section class="contact-card">
 					<header class="contact-card__header">
-						<h2>Contact information</h2>
+						<h2 style="text-align:center; font-family:agency;">Contact information</h2>
 					</header>
-					<div class="contact-info">
-						<div class="contact-info__logo">SB</div>
+					<div class="contact-info about-card__info">
 						<div class="contact-info__group">
 							<div class="contact-info__vcard vcard">
-								<h4 class="fn org">Seth Boyce</h4>
-								<p class="role title">Freelancer</p>
+								<h2 class="fn org" style="font-family:open sans;">Seth Boyce</h2>
+								<br/>
 								<p class="icon icon_mail"><a class="email" href="mailto:mjxstudios@gmail.com">mjxstudios@gmail.com</a></p>
+								<p class="icon icon_mail"><a class="email" href="mailto:gm.xero@rpthea.net">gm.xero@rpthea.net</a></p>
 							</div>
 							<ul class="contact-info__social">
 								<li><a class="icon icon_in" rel="nofollow" alt="My Linkedin Profile">My Linkedin profile</a></li>
