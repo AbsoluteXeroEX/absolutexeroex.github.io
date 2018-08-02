@@ -1263,7 +1263,7 @@ a:hover{
 	transition:color .5s
 }
 
-.main-footer__gotop:hover:before{color:#2c3e50}
+.main-footer__gotop:hover:before{color:#91c5f2}
 
 @media screen and (max-width:1200px) and (min-width:800px){
 	.testimonials__item img{display:none}
