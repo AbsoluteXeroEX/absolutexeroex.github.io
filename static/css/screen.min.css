@@ -912,7 +912,8 @@ a:hover{
 	visibility:hidden;
 	opacity:0;
 	-webkit-transition:opacity .5s;
-	transition:opacity .5s
+	transition:opacity .5s;
+	cursor: pointer;
 }
 
 .projects__item figcaption:after{
