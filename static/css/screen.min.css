@@ -884,10 +884,10 @@ a:hover{
 .projects__item{
 	float:left;
 	width:24.75%;
-	margin:2px;
+	margin:1px;
 	position:relative;
 	padding-bottom:13%;
-	overflow:hidden;
+	/*overflow:hidden;*/
 }
 
 .projects__item img{
