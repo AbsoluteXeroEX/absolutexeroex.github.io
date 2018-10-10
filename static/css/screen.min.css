@@ -887,7 +887,8 @@ a:hover{
 	margin:1px;
 	position:relative;
 	padding-bottom:13%;
-	/*overflow:hidden;*/
+	overflow:hidden;
+	vertical-align:middle;
 }
 
 .projects__item img{
