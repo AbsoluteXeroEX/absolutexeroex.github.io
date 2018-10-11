@@ -882,8 +882,8 @@ a:hover{
 }
 
 .projects__item{
-	float:left;
-	width:24.75%;
+	display:inline-block;
+	width:33%;
 	margin:1px;
 	position:relative;
 	padding-bottom:13%;
