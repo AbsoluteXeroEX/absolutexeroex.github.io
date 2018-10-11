@@ -897,8 +897,9 @@ a:hover{
 	right:0;
 	left:0;
 	display:block;
-	width:100%;
 	margin:0
+	min-width:800px;
+	min-height:450px;
 }
 
 .projects__item figcaption{
