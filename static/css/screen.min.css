@@ -887,12 +887,10 @@ a:hover{
 	margin:1px;
 	position:relative;
 	padding-bottom:13%;
-	overflow:hidden;
 	vertical-align:middle;
 }
 
 .projects__item img{
-	position:absolute;
 	top:0;
 	right:0;
 	left:0;
