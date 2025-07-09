@@ -63,7 +63,7 @@ body{
 	background:#fff url('../images/bg/mainBackground_01.jpg');
 	background-attachment: fixed;
 	background-position: center;
-	background-size: auto;
+	background-size: cover;
 }
 
 .container{
